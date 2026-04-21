@@ -325,6 +325,7 @@ USE_TZ = True                # Store datetimes in the database as UTC, display i
 # For development, Django serves these automatically when DEBUG=True.
 # -------------------------------------------------------------------
 STATIC_URL = 'static/'
+STATIC_ROOT = BASE_DIR / 'static'
 
 # -------------------------------------------------------------------
 # AUTHENTICATION REDIRECTS

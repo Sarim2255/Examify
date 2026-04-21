@@ -324,7 +324,7 @@ USE_TZ = True                # Store datetimes in the database as UTC, display i
 # Static files are assets that don't change per-user.
 # For development, Django serves these automatically when DEBUG=True.
 # -------------------------------------------------------------------
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'static'
 
 # -------------------------------------------------------------------

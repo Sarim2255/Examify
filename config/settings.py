@@ -243,6 +243,7 @@ AUTH_USER_MODEL = 'accounts.CustomUser'
 # -------------------------------------------------------------------
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',         # Enforces HTTPS and other security headers
+    'whitenoise.middleware.WhiteNoiseMiddleware',            # Serves static files magically
     'django.contrib.sessions.middleware.SessionMiddleware',  # Handles user session management (cookies)
     'django.middleware.common.CommonMiddleware',             # Handles URL trailing slashes and content types
     'django.middleware.csrf.CsrfViewMiddleware',             # Protects forms from Cross-Site Request Forgery attacks

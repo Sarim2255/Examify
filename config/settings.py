@@ -26,8 +26,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # DEBUG=True shows detailed error pages. Set to False in production.
 # -------------------------------------------------------------------
 SECRET_KEY = 'django-insecure-lngntpfjg)dcl!50l-ho)!c#@^$-8ioa4b0f9$4mq2$=p8&_sb'
-DEBUG = True
-ALLOWED_HOSTS = []
+DEBUG = False
+ALLOWED_HOSTS = ['sarim2255.pythonanywhere.com', 'www.sarim2255.pythonanywhere.com', '*']
 
 
 # -------------------------------------------------------------------

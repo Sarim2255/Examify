@@ -14,7 +14,7 @@
     </button>
 </div>
 
-<div style="background-color: var(--primary-color); color: white; padding: 1.5rem; border-radius: 8px; margin-bottom: 2rem; display: flex; justify-content: space-between; align-items: center;">
+<div style="background-color: var(--primary-color); color: white; padding: 1.5rem; border-radius: 8px; margin-bottom: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
     <div>
         <h2 style="margin: 0;">{{ exam.title }}</h2>
         <p style="margin: 0; opacity: 0.8;">{{ exam.course.name }}</p>
@@ -56,7 +56,7 @@
     {% endfor %}
     
     {% if questions %}
-    <div style="text-align: center; margin-top: 2rem; display: flex; gap: 1rem; justify-content: center;">
+    <div style="text-align: center; margin-top: 2rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
         <a href="{% url 'student_dashboard' %}" style="display: inline-block; padding: 1rem 2rem; background-color: #e2e8f0; color: var(--text-color); text-decoration: none; border-radius: 4px; font-weight: bold;">Leave Exam</a>
         <button type="submit" style="font-size: 1.2rem; padding: 1rem 3rem; margin-top: 0;" onclick="return confirm('Are you sure you want to submit? You cannot change your answers later.');">Submit Exam</button>
     </div>

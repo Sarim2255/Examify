@@ -255,6 +255,48 @@
         letter-spacing: 2px;
         font-size: 0.9rem;
     }
+
+    /* HOME PAGE RESPONSIVE DESIGN */
+    @media (max-width: 992px) {
+        .hero-section {
+            flex-direction: column;
+            text-align: center;
+            padding: 3rem 0;
+            gap: 2rem;
+        }
+        .hero-text {
+            max-width: 100%;
+        }
+        .hero-buttons {
+            justify-content: center;
+        }
+        .hero-visual {
+            display: none;
+        }
+        .feature-grid, .steps-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .hero-stats-row {
+            justify-content: center !important;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .hero-title {
+            font-size: 2.5rem;
+        }
+        .feature-grid, .steps-grid {
+            grid-template-columns: 1fr;
+        }
+        .stats-section {
+            flex-direction: column;
+            gap: 2rem;
+            padding: 2rem 1rem;
+        }
+        .stat-item h2 {
+            font-size: 2.5rem;
+        }
+    }
 </style>
 
 {% if not user.is_authenticated %}
@@ -270,7 +312,7 @@
                 style="padding: 1rem 2rem; font-size: 1.1rem; background: white;">Member Login</a>
         </div>
 
-        <div style="margin-top: 2rem; display: flex; align-items: center; gap: 1rem;">
+        <div class="hero-stats-row" style="margin-top: 2rem; display: flex; align-items: center; gap: 1rem;">
             <!-- Avatar stack -->
             <div style="display: flex; margin-right: 0.5rem;">
                 <div
